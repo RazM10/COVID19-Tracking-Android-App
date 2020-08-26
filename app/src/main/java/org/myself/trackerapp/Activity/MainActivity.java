@@ -1,4 +1,4 @@
-package org.myself.trackerapp;
+package org.myself.trackerapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +19,8 @@ import org.eazegraph.lib.charts.PieChart;
 import org.eazegraph.lib.models.PieModel;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.myself.trackerapp.Helper.Links;
+import org.myself.trackerapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
