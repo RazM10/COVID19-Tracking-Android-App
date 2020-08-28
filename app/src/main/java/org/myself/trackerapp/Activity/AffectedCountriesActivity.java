@@ -61,7 +61,7 @@ public class AffectedCountriesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(getApplicationContext(),AffectedCountriesActivity.class).putExtra("position",position));
+                startActivity(new Intent(getApplicationContext(),DetailsCountryActivity.class).putExtra("position",position));
             }
         });
 
