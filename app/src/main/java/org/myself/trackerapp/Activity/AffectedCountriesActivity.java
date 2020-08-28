@@ -39,7 +39,7 @@ public class AffectedCountriesActivity extends AppCompatActivity {
     ListView listView;
     SimpleArcLoader simpleArcLoader;
 
-    public static List<Country> countryModelsList = new ArrayList<>();
+    public static List<Country> countryStaticList = new ArrayList<>();
     Country countryModel;
     CountryAdapter myCustomAdapter;
 
@@ -126,11 +126,11 @@ public class AffectedCountriesActivity extends AppCompatActivity {
                                 String flagUrl = object.getString("flag");
 
                                 countryModel = new Country(flagUrl,countryName,cases,todayCases,deaths,todayDeaths,recovered,active,critical);
-                                countryModelsList.add(countryModel);
+                                countryStaticList.add(countryModel);
 
                             }
 
-                            myCustomAdapter = new CountryAdapter(AffectedCountriesActivity.this,countryModelsList);
+                            myCustomAdapter = new CountryAdapter(AffectedCountriesActivity.this, countryStaticList);
                             listView.setAdapter(myCustomAdapter);
                             simpleArcLoader.stop();
                             simpleArcLoader.setVisibility(View.GONE);

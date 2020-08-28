@@ -99,7 +99,7 @@ public class CountryAdapter extends ArrayAdapter<Country> {
             protected void publishResults(CharSequence constraint, FilterResults results) {
 
                 countryListFiltered = (List<Country>) results.values;
-                AffectedCountriesActivity.countryModelsList = (List<Country>) results.values;
+                AffectedCountriesActivity.countryStaticList = (List<Country>) results.values;
                 notifyDataSetChanged();
 
             }
